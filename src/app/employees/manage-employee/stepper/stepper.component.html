@@ -1,0 +1,34 @@
+    <!-- Steps form -->
+    <div class="card">
+        <div class="card-body mb-4">
+    
+        <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Steps form example</strong></h2>
+    
+        <p>
+            <strong>Detailed documentation and more examples you can find in our 
+            <a href="https://mdbootstrap.com/docs/jquery/components/stepper/" target="_blank">Bootstrap Stepper Docs</a>
+            </strong> 
+        </p>
+    
+        <hr class="my-5">
+        <!-- Stepper -->
+        <div class="steps-form">
+            <div class="steps-row setup-panel">
+            <div class="steps-step">
+                <a href="javascript:void(0)" type="button" (click)="onSelect(1)" class="btn btn-default btn-circle" [ngClass]="{'completed': onStepOne}">1</a>
+                <p>Step 1</p>
+            </div>
+            <div class="steps-step">
+                <a href="javascript:void(0)" type="button" (click)="onSelect(2)" class="btn btn-default btn-circle" [ngClass]="{'completed': onStepTwo}">2</a>
+                <p>Step 2</p>
+            </div>
+            <div class="steps-step">
+                <a href="javascript:void(0)" type="button" (click)="onSelect(3)" class="btn btn-default btn-circle" [ngClass]="{'completed': onStepThree}">3</a>
+                <p>Step 3</p>
+            </div>
+            </div>
+        </div>
+    
+        </div>
+    </div>
+  <!-- Steps form -->

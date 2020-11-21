@@ -1,0 +1,8 @@
+<div class="col-sm-9">
+    <ul class="list-group">
+        <li class="list-group-item">Manage Employee</li>
+    </ul>
+    <app-stepper [formState]="stepSubmitted" (stepSelected)="onSwitch($event)" ></app-stepper>
+    <app-stepone (stepCompleted)="onSubmit($event)" *ngIf="firstStepLoaded"></app-stepone>
+    <app-steptwo *ngIf="secondStepLoaded"></app-steptwo>
+</div>
